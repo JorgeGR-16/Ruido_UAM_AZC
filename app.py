@@ -111,44 +111,17 @@ with col2:
     st.title("**Investigación del comportamiento del ruido en un ambiente universitario**")
     st.image("UAMAZC.jpg", use_container_width=True)
 
-# --- MENÚ DE NAVEGACIÓN ---
+
 if "seccion" not in st.session_state:
     st.session_state.seccion = "Introducción"
-
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    if st.button("Introducción", use_container_width=True):
-        st.session_state.seccion = "Introducción"
-with col2:
-    if st.button("Objetivo", use_container_width=True):
-        st.session_state.seccion = "Objetivo"
-with col3:
-    if st.button("Desarrollo", use_container_width=True):
-        st.session_state.seccion = "Desarrollo"
-with col4:
-    if st.button("Resultados", use_container_width=True):
-        st.session_state.seccion = "Resultados"
 
 seccion_activa = st.session_state.seccion
 st.markdown('<p class="subheader">Aplicación de análisis acústico para investigación técnica</p>', unsafe_allow_html=True)
 
 # --- SECCIONES DE CONTENIDO ---
-if seccion_activa == "Introducción":
-    st.markdown("### Introducción")
-    st.write("Aquí puedes agregar el texto de introducción sobre tu investigación.")
-    st.write("Esta aplicación permite visualizar y analizar los datos de nivel de sonido (Leq) recolectados por una red de sonómetros en un ambiente universitario.")
 
-elif seccion_activa == "Objetivo":
-    st.markdown("### Objetivo")
-    st.write("Describe aquí el objetivo principal de tu investigación.")
-    st.write("El objetivo es investigar el comportamiento del ruido para identificar patrones y posibles zonas de alto impacto acústico, contribuyendo a la creación de entornos más saludables.")
 
-elif seccion_activa == "Desarrollo":
-    st.markdown("### Desarrollo")
-    st.write("Detalla el proceso de desarrollo de tu sistema, incluyendo la metodología, hardware y software utilizados.")
-    st.write("Se utilizó una red de sonómetros basados en LoRa32 para la recolección de datos, los cuales se almacenan en una base de datos InfluxDB para su posterior análisis.")
-
-elif seccion_activa == "Resultados":
+if seccion_activa == "Resultados":
     st.markdown("### Resultados")
 
     # --- Sidebar para filtros de datos ---
