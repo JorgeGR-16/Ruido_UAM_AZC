@@ -388,5 +388,3 @@ elif seccion_activa == "Resultados":
 
     else:
         st.warning("No hay datos disponibles en este momento para mostrar o descargar. Por favor, ajusta los filtros o verifica la conexión a InfluxDB.")
-    else:
-        st.warning("No hay datos para los parámetros seleccionados.")
