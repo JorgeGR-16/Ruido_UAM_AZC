@@ -97,8 +97,7 @@ st.markdown("""
 col1, col2, col3 = st.columns([1, 4, 1])
 with col2:
     st.title("**Investigación del comportamiento del ruido en un ambiente universitario**")
-    # Asegúrate de tener el archivo UAMAZC.jpg en el mismo directorio
-    st.image("UAMAZC.jpg", use_column_width=True)
+  
 
 # --- MENÚ DE NAVEGACIÓN ---
 if "seccion" not in st.session_state:
