@@ -14,7 +14,7 @@ st_autorefresh(interval=30000, key="refresh")
 # --- CONFIGURACIÓN DE INFLUXDB ---
 INFLUXDB_URL = "http://localhost:8086"
 INFLUXDB_TOKEN = "0Gogft785BaN9fzPYk3OdVcO8Qlrt3Y39dA3Ug2IwiJk2TDadgIwmc13AFEMoeakBqkmv08zdr7di072VuMICQ=="
-INFLUXDB_ORG = "PI"
+INFLUXDB_ORG = "CADI"
 INFLUXDB_BUCKET = "Ruido"
 
 # --- FUNCIÓN DE CONSULTA A INFLUXDB ---
