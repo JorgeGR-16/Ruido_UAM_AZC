@@ -12,8 +12,8 @@ from streamlit_autorefresh import st_autorefresh
 st_autorefresh(interval=30000, key="refresh")
 
 # --- CONFIGURACIÓN DE INFLUXDB ---
-INFLUXDB_URL = "http://localhost:8086"
-INFLUXDB_TOKEN = "0Gogft785BaN9fzPYk3OdVcO8Qlrt3Y39dA3Ug2IwiJk2TDadgIwmc13AFEMoeakBqkmv08zdr7di072VuMICQ=="
+INFLUXDB_URL = "http://192.168.10.35:8086"
+INFLUXDB_TOKEN = "iHMYwp5f0TfvEmeOMkWzIO0TziTy9UFa64rxjYi481fKu265JmdWt4KshMP_pT3vrVr0P4dnfZ04Ei48ftKiYg=="
 INFLUXDB_ORG = "CADI"
 INFLUXDB_BUCKET = "Ruido"
 
